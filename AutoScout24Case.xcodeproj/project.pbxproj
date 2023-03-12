@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		F76617ED29BE50E2009C4976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76617EC29BE50E2009C4976 /* AppDelegate.swift */; };
 		F76617EF29BE50E2009C4976 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76617EE29BE50E2009C4976 /* SceneDelegate.swift */; };
-		F76617F129BE50E2009C4976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76617F029BE50E2009C4976 /* ViewController.swift */; };
-		F76617F429BE50E2009C4976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76617F229BE50E2009C4976 /* Main.storyboard */; };
 		F76617F629BE50E6009C4976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76617F529BE50E6009C4976 /* Assets.xcassets */; };
 		F76617F929BE50E6009C4976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76617F729BE50E6009C4976 /* LaunchScreen.storyboard */; };
 		F766180429BE50E6009C4976 /* AutoScout24CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180329BE50E6009C4976 /* AutoScout24CaseTests.swift */; };
 		F766180E29BE50E6009C4976 /* AutoScout24CaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180D29BE50E6009C4976 /* AutoScout24CaseUITests.swift */; };
 		F766181029BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180F29BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift */; };
+		F766182329BE524C009C4976 /* CarFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766182129BE524C009C4976 /* CarFeedController.swift */; };
+		F766182429BE524C009C4976 /* CarFeedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F766182229BE524C009C4976 /* CarFeedController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		F76617E929BE50E2009C4976 /* AutoScout24Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScout24Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76617EC29BE50E2009C4976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F76617EE29BE50E2009C4976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F76617F029BE50E2009C4976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F76617F329BE50E2009C4976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F76617F529BE50E6009C4976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76617F829BE50E6009C4976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76617FA29BE50E6009C4976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,9 @@
 		F766180929BE50E6009C4976 /* AutoScout24CaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoScout24CaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F766180D29BE50E6009C4976 /* AutoScout24CaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24CaseUITests.swift; sourceTree = "<group>"; };
 		F766180F29BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24CaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F766182129BE524C009C4976 /* CarFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeedController.swift; sourceTree = "<group>"; };
+		F766182229BE524C009C4976 /* CarFeedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarFeedController.xib; sourceTree = "<group>"; };
+		F766182629BE529E009C4976 /* RemoteDataProvider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RemoteDataProvider; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		F76617E029BE50E2009C4976 = {
 			isa = PBXGroup;
 			children = (
+				F766182629BE529E009C4976 /* RemoteDataProvider */,
 				F76617EB29BE50E2009C4976 /* AutoScout24Case */,
 				F766180229BE50E6009C4976 /* AutoScout24CaseTests */,
 				F766180C29BE50E6009C4976 /* AutoScout24CaseUITests */,
@@ -99,13 +101,12 @@
 		F76617EB29BE50E2009C4976 /* AutoScout24Case */ = {
 			isa = PBXGroup;
 			children = (
-				F76617EC29BE50E2009C4976 /* AppDelegate.swift */,
-				F76617EE29BE50E2009C4976 /* SceneDelegate.swift */,
-				F76617F029BE50E2009C4976 /* ViewController.swift */,
-				F76617F229BE50E2009C4976 /* Main.storyboard */,
-				F76617F529BE50E6009C4976 /* Assets.xcassets */,
-				F76617F729BE50E6009C4976 /* LaunchScreen.storyboard */,
-				F76617FA29BE50E6009C4976 /* Info.plist */,
+				F766182529BE5250009C4976 /* Routing */,
+				F766182029BE51D2009C4976 /* Scenes */,
+				F766181F29BE51AC009C4976 /* Launch */,
+				F766181E29BE5192009C4976 /* App */,
+				F766181C29BE5174009C4976 /* Resources */,
+				F766181D29BE5185009C4976 /* Configurations */,
 			);
 			path = AutoScout24Case;
 			sourceTree = "<group>";
@@ -125,6 +126,55 @@
 				F766180F29BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift */,
 			);
 			path = AutoScout24CaseUITests;
+			sourceTree = "<group>";
+		};
+		F766181C29BE5174009C4976 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F76617F529BE50E6009C4976 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F766181D29BE5185009C4976 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F76617FA29BE50E6009C4976 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F766181E29BE5192009C4976 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F76617EC29BE50E2009C4976 /* AppDelegate.swift */,
+				F76617EE29BE50E2009C4976 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F766181F29BE51AC009C4976 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F76617F729BE50E6009C4976 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		F766182029BE51D2009C4976 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F766182129BE524C009C4976 /* CarFeedController.swift */,
+				F766182229BE524C009C4976 /* CarFeedController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F766182529BE5250009C4976 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76617F929BE50E6009C4976 /* LaunchScreen.storyboard in Resources */,
+				F766182429BE524C009C4976 /* CarFeedController.xib in Resources */,
 				F76617F629BE50E6009C4976 /* Assets.xcassets in Resources */,
-				F76617F429BE50E2009C4976 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F76617F129BE50E2009C4976 /* ViewController.swift in Sources */,
+				F766182329BE524C009C4976 /* CarFeedController.swift in Sources */,
 				F76617ED29BE50E2009C4976 /* AppDelegate.swift in Sources */,
 				F76617EF29BE50E2009C4976 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F76617F229BE50E2009C4976 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F76617F329BE50E2009C4976 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F76617F729BE50E6009C4976 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +481,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutoScout24Case/Info.plist;
+				INFOPLIST_FILE = AutoScout24Case/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +508,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutoScout24Case/Info.plist;
+				INFOPLIST_FILE = AutoScout24Case/Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
