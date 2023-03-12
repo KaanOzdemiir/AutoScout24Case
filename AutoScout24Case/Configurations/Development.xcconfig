@@ -1,0 +1,11 @@
+//
+//  Development.xcconfig
+//  AutoScout24Case
+//
+//  Created by Kaan Ozdemir on 12.03.2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_HOST=private-fe87c-simpleclassifieds.apiary-mock.com
+API_SCHEME=http
