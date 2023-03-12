@@ -13,9 +13,20 @@
 		F766180429BE50E6009C4976 /* AutoScout24CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180329BE50E6009C4976 /* AutoScout24CaseTests.swift */; };
 		F766180E29BE50E6009C4976 /* AutoScout24CaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180D29BE50E6009C4976 /* AutoScout24CaseUITests.swift */; };
 		F766181029BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766180F29BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift */; };
-		F766182329BE524C009C4976 /* CarFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766182129BE524C009C4976 /* CarFeedController.swift */; };
-		F766182429BE524C009C4976 /* CarFeedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F766182229BE524C009C4976 /* CarFeedController.xib */; };
 		F782198E29BE636E00D60856 /* RemoteDataProvider in Frameworks */ = {isa = PBXBuildFile; productRef = F782198D29BE636E00D60856 /* RemoteDataProvider */; };
+		F782199229BE74B200D60856 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782199129BE74B200D60856 /* Navigator.swift */; };
+		F782199629BE756500D60856 /* CarFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782199529BE756500D60856 /* CarFeedViewModel.swift */; };
+		F782199929BE759700D60856 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782199829BE759700D60856 /* BaseController.swift */; };
+		F782199B29BE75CD00D60856 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782199A29BE75CD00D60856 /* BaseViewModel.swift */; };
+		F782199F29BE78BD00D60856 /* Util in Frameworks */ = {isa = PBXBuildFile; productRef = F782199E29BE78BD00D60856 /* Util */; };
+		F78219A229BE78FC00D60856 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78219A029BE78FC00D60856 /* CarCell.swift */; };
+		F78219A329BE78FC00D60856 /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78219A129BE78FC00D60856 /* CarCell.xib */; };
+		F78219A529BE793800D60856 /* CarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78219A429BE793800D60856 /* CarCellViewModel.swift */; };
+		F78219A829BE7D1700D60856 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F78219A729BE7D1700D60856 /* Kingfisher */; };
+		F78219AF29BE81B000D60856 /* CarFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78219AD29BE81B000D60856 /* CarFeedController.swift */; };
+		F78219B029BE81B000D60856 /* CarFeedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78219AE29BE81B000D60856 /* CarFeedController.xib */; };
+		F78219B229BE82A100D60856 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78219B129BE82A100D60856 /* BaseTableViewCell.swift */; };
+		F78219B429BE82ED00D60856 /* BaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78219B329BE82ED00D60856 /* BaseCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +57,20 @@
 		F766180929BE50E6009C4976 /* AutoScout24CaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoScout24CaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F766180D29BE50E6009C4976 /* AutoScout24CaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24CaseUITests.swift; sourceTree = "<group>"; };
 		F766180F29BE50E6009C4976 /* AutoScout24CaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24CaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F766182129BE524C009C4976 /* CarFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeedController.swift; sourceTree = "<group>"; };
-		F766182229BE524C009C4976 /* CarFeedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarFeedController.xib; sourceTree = "<group>"; };
 		F766182629BE529E009C4976 /* RemoteDataProvider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RemoteDataProvider; sourceTree = "<group>"; };
 		F782198B29BE5A5D00D60856 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		F782199129BE74B200D60856 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		F782199529BE756500D60856 /* CarFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeedViewModel.swift; sourceTree = "<group>"; };
+		F782199829BE759700D60856 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F782199A29BE75CD00D60856 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F782199D29BE783E00D60856 /* Util */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Util; sourceTree = "<group>"; };
+		F78219A029BE78FC00D60856 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		F78219A129BE78FC00D60856 /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		F78219A429BE793800D60856 /* CarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellViewModel.swift; sourceTree = "<group>"; };
+		F78219AD29BE81B000D60856 /* CarFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeedController.swift; sourceTree = "<group>"; };
+		F78219AE29BE81B000D60856 /* CarFeedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarFeedController.xib; sourceTree = "<group>"; };
+		F78219B129BE82A100D60856 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F78219B329BE82ED00D60856 /* BaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78219A829BE7D1700D60856 /* Kingfisher in Frameworks */,
+				F782199F29BE78BD00D60856 /* Util in Frameworks */,
 				F782198E29BE636E00D60856 /* RemoteDataProvider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +104,7 @@
 		F76617E029BE50E2009C4976 = {
 			isa = PBXGroup;
 			children = (
+				F782199D29BE783E00D60856 /* Util */,
 				F766182629BE529E009C4976 /* RemoteDataProvider */,
 				F76617EB29BE50E2009C4976 /* AutoScout24Case */,
 				F766180229BE50E6009C4976 /* AutoScout24CaseTests */,
@@ -166,8 +190,9 @@
 		F766182029BE51D2009C4976 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F766182129BE524C009C4976 /* CarFeedController.swift */,
-				F766182229BE524C009C4976 /* CarFeedController.xib */,
+				F782199729BE758E00D60856 /* Base */,
+				F782199429BE755200D60856 /* ViewModel */,
+				F782199329BE754D00D60856 /* View */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -175,6 +200,7 @@
 		F766182529BE5250009C4976 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				F782199129BE74B200D60856 /* Navigator.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -184,6 +210,37 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F782199329BE754D00D60856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F78219AD29BE81B000D60856 /* CarFeedController.swift */,
+				F78219AE29BE81B000D60856 /* CarFeedController.xib */,
+				F78219A029BE78FC00D60856 /* CarCell.swift */,
+				F78219A129BE78FC00D60856 /* CarCell.xib */,
+				F78219A429BE793800D60856 /* CarCellViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F782199429BE755200D60856 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F782199529BE756500D60856 /* CarFeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F782199729BE758E00D60856 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F782199829BE759700D60856 /* BaseController.swift */,
+				F782199A29BE75CD00D60856 /* BaseViewModel.swift */,
+				F78219B129BE82A100D60856 /* BaseTableViewCell.swift */,
+				F78219B329BE82ED00D60856 /* BaseCellViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +261,8 @@
 			name = AutoScout24Case;
 			packageProductDependencies = (
 				F782198D29BE636E00D60856 /* RemoteDataProvider */,
+				F782199E29BE78BD00D60856 /* Util */,
+				F78219A729BE7D1700D60856 /* Kingfisher */,
 			);
 			productName = AutoScout24Case;
 			productReference = F76617E929BE50E2009C4976 /* AutoScout24Case.app */;
@@ -277,6 +336,9 @@
 				Base,
 			);
 			mainGroup = F76617E029BE50E2009C4976;
+			packageReferences = (
+				F78219A629BE7D1700D60856 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F76617EA29BE50E2009C4976 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,8 +355,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78219B029BE81B000D60856 /* CarFeedController.xib in Resources */,
 				F76617F929BE50E6009C4976 /* LaunchScreen.storyboard in Resources */,
-				F766182429BE524C009C4976 /* CarFeedController.xib in Resources */,
+				F78219A329BE78FC00D60856 /* CarCell.xib in Resources */,
 				F76617F629BE50E6009C4976 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,8 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F766182329BE524C009C4976 /* CarFeedController.swift in Sources */,
+				F78219AF29BE81B000D60856 /* CarFeedController.swift in Sources */,
 				F76617ED29BE50E2009C4976 /* AppDelegate.swift in Sources */,
+				F782199929BE759700D60856 /* BaseController.swift in Sources */,
+				F78219A529BE793800D60856 /* CarCellViewModel.swift in Sources */,
+				F78219B229BE82A100D60856 /* BaseTableViewCell.swift in Sources */,
+				F782199229BE74B200D60856 /* Navigator.swift in Sources */,
+				F782199629BE756500D60856 /* CarFeedViewModel.swift in Sources */,
+				F78219A229BE78FC00D60856 /* CarCell.swift in Sources */,
+				F782199B29BE75CD00D60856 /* BaseViewModel.swift in Sources */,
+				F78219B429BE82ED00D60856 /* BaseCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,10 +726,30 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		F78219A629BE7D1700D60856 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		F782198D29BE636E00D60856 /* RemoteDataProvider */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RemoteDataProvider;
+		};
+		F782199E29BE78BD00D60856 /* Util */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Util;
+		};
+		F78219A729BE7D1700D60856 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F78219A629BE7D1700D60856 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
