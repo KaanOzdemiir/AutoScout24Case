@@ -32,7 +32,10 @@ class CarCellViewModel: BaseCellViewModel {
     }
     
     var millageText: String? {
-        car.mileage?.stringValue
+        if let millage = car.mileage {
+            return "\(millage) mi"
+        }
+        return nil
     }
     
     var priceText: String? {

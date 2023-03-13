@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarFeedController" customModule="AutoScout24Case" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="KQP-3b-Ee9" id="Ob9-MB-3W8"/>
+                <outlet property="tableView" destination="W1x-8l-4gh" id="4li-Wk-ZtX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2br-HE-eXn">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KQP-3b-Ee9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W1x-8l-4gh">
+                            <rect key="frame" x="0.0" y="56" width="414" height="792"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2br-HE-eXn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1uk-zV-jSb"/>
+                <constraint firstItem="2br-HE-eXn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5t5-Gb-3gk"/>
+                <constraint firstAttribute="bottom" secondItem="2br-HE-eXn" secondAttribute="bottom" id="Cgf-qE-VDS"/>
+                <constraint firstItem="2br-HE-eXn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WEp-v1-HDR"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="143.97321428571428"/>
+        </view>
+        <searchDisplayController id="NOs-yN-NQq">
+            <connections>
+                <outlet property="searchBar" destination="KQP-3b-Ee9" id="hHK-8R-JFx"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

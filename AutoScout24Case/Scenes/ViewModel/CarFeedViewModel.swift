@@ -13,7 +13,7 @@ class CarFeedViewModel: BaseViewModel {
     
     weak var view: CarFeedViewInterface?
     
-    var cars: [CarResult] = [] {
+    private var cars: [CarResult] = [] {
         didSet {
             view?.updateTableView()
         }
@@ -35,6 +35,10 @@ class CarFeedViewModel: BaseViewModel {
     
     func cellViewModel(at indexPath: IndexPath) -> CarCellViewModel? {
         carCellViewModels[safe: indexPath.row]
+    }
+    
+    func car(at indexPath: IndexPath) -> CarResult? {
+        cars[safe: indexPath.row]
     }
 }
 

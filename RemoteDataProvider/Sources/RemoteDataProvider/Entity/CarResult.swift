@@ -14,7 +14,7 @@ public struct CarResult: Decodable {
     public var firstRegistration: String?
     public var mileage: Int?
     public var fuel: String?
-    public var images: [Image]?
+    public var images: [CarImage]?
     public var description: String?
     public var modelline: String?
     public var seller: Seller?
@@ -22,7 +22,7 @@ public struct CarResult: Decodable {
 }
 
 // MARK: - Image
-public struct Image: Decodable {
+public struct CarImage: Decodable {
     public var url: String
 }
 

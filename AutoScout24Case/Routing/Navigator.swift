@@ -18,7 +18,7 @@ class AppNavigator: Navigator {
             UIView.performWithoutAnimation {
                 let viewModel = CarFeedViewModel()
                 let rootController = CarFeedController(viewModel: viewModel)
-                window.rootViewController = rootController
+                window.rootViewController = UINavigationController(rootViewController: rootController)
             }
         })
         window.makeKeyAndVisible()

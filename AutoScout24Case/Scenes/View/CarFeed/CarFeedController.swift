@@ -16,7 +16,8 @@ protocol CarFeedViewInterface: AnyObject {
 
 final class CarFeedController: BaseController<CarFeedViewModel>, CarFeedViewInterface {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,10 @@ final class CarFeedController: BaseController<CarFeedViewModel>, CarFeedViewInte
     }
     
     func presentAlert(message: String) {
-        
+        AlertHelper(message: "Something went wrong", actions: [
+            UIAlertAction(title: "OK", style: .default)
+        ])
+        .present()
     }
     
     func updateTableView() {
@@ -56,4 +60,11 @@ extension CarFeedController: UITableViewDataSource {
 }
 
 extension CarFeedController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let car = viewModel.car(at: indexPath) {
+            let viewModel = CarDetailViewModel(car: car)
+            let controller = CarDetailController(viewModel: viewModel)
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 }

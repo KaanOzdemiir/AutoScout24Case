@@ -8,6 +8,7 @@
 import XCTest
 @testable import AutoScout24Case
 import RemoteDataProvider
+import Util
 
 final class AutoScout24CaseTests: XCTestCase {
 
@@ -50,4 +51,8 @@ final class AutoScout24CaseTests: XCTestCase {
         wait(for: [expectation], timeout: timeout)
     }
 
+    func testAlertPresentationHelper() {
+        AlertHelper(message: "test", actions: []).present()
+        XCTAssertTrue(UIApplication.shared.topViewController?.isKind(of: UIAlertController.self) ?? false)
+    }
 }
