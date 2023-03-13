@@ -9,4 +9,5 @@ import Foundation
 
 public enum APIError: Error, Decodable {
     case general
+    case decode
 }

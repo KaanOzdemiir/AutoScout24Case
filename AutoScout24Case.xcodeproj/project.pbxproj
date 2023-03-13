@@ -14,6 +14,9 @@
 		F727B65029BEF32E00E8CCEC /* CarImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F727B64E29BEF32E00E8CCEC /* CarImageCell.xib */; };
 		F727B65529BEF34800E8CCEC /* CarImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727B65429BEF34800E8CCEC /* CarImageViewModel.swift */; };
 		F727B65729BEF4F900E8CCEC /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727B65629BEF4F900E8CCEC /* BaseCollectionViewCell.swift */; };
+		F727B65A29BF075800E8CCEC /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727B65929BF075800E8CCEC /* MockDataProvider.swift */; };
+		F727B65C29BF07A700E8CCEC /* RequestProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F727B65B29BF07A700E8CCEC /* RequestProtocol+Extensions.swift */; };
+		F727B65F29BF089B00E8CCEC /* CarRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = F727B65E29BF089B00E8CCEC /* CarRequest.json */; };
 		F76617ED29BE50E2009C4976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76617EC29BE50E2009C4976 /* AppDelegate.swift */; };
 		F76617F629BE50E6009C4976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76617F529BE50E6009C4976 /* Assets.xcassets */; };
 		F76617F929BE50E6009C4976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76617F729BE50E6009C4976 /* LaunchScreen.storyboard */; };
@@ -61,6 +64,9 @@
 		F727B64E29BEF32E00E8CCEC /* CarImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarImageCell.xib; sourceTree = "<group>"; };
 		F727B65429BEF34800E8CCEC /* CarImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageViewModel.swift; sourceTree = "<group>"; };
 		F727B65629BEF4F900E8CCEC /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		F727B65929BF075800E8CCEC /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		F727B65B29BF07A700E8CCEC /* RequestProtocol+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestProtocol+Extensions.swift"; sourceTree = "<group>"; };
+		F727B65E29BF089B00E8CCEC /* CarRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CarRequest.json; sourceTree = "<group>"; };
 		F76617E929BE50E2009C4976 /* AutoScout24Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScout24Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76617EC29BE50E2009C4976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F76617F529BE50E6009C4976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,6 +210,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F727B65829BF074E00E8CCEC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F727B65D29BF089100E8CCEC /* JSON */,
+				F727B65929BF075800E8CCEC /* MockDataProvider.swift */,
+				F727B65B29BF07A700E8CCEC /* RequestProtocol+Extensions.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F727B65D29BF089100E8CCEC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F727B65E29BF089B00E8CCEC /* CarRequest.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		F76617E029BE50E2009C4976 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +267,7 @@
 		F766180229BE50E6009C4976 /* AutoScout24CaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				F727B65829BF074E00E8CCEC /* Mock */,
 				F766180329BE50E6009C4976 /* AutoScout24CaseTests.swift */,
 			);
 			path = AutoScout24CaseTests;
@@ -469,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F727B65F29BF089B00E8CCEC /* CarRequest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +534,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F727B65A29BF075800E8CCEC /* MockDataProvider.swift in Sources */,
 				F766180429BE50E6009C4976 /* AutoScout24CaseTests.swift in Sources */,
+				F727B65C29BF07A700E8CCEC /* RequestProtocol+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

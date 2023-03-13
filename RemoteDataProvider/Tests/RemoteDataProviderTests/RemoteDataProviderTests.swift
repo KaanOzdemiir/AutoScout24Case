@@ -1,6 +1,4 @@
 import XCTest
 @testable import RemoteDataProvider
 
-final class RemoteDataProviderTests: XCTestCase {
-    
-}
+final class RemoteDataProviderTests: XCTestCase { }

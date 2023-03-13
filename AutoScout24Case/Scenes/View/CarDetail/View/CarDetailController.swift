@@ -48,6 +48,8 @@ final class CarDetailController: BaseController<CarDetailViewModel>, CarDetailVi
         fuelLabel.text = viewModel.fuelText
         millageLabel.text = viewModel.millageText
         priceLabel.text = viewModel.priceText
+        
+        updatePageLabel()
     }
     
     private func updatePageLabel() {

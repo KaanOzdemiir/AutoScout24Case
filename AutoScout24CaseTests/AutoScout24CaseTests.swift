@@ -15,7 +15,7 @@ final class AutoScout24CaseTests: XCTestCase {
     var dataProvider: DataProviderProtocol!
     
     override func setUpWithError() throws {
-        dataProvider = RemoteDataProvider.shared
+        dataProvider = MockDataProvider()
     }
     
     override func tearDownWithError() throws {
@@ -32,8 +32,13 @@ final class AutoScout24CaseTests: XCTestCase {
         XCTAssertEqual(request.urlComponents?.url?.absoluteString, expected)
     }
     
+    func testMockFileName() {
+        let request = CarRequest()
+        let expected = "CarRequest"
+        XCTAssertEqual(request.mockFileName, expected)
+    }
+    
     func testCarRequest() {
-        
         let request = CarRequest()
         
         let expectation = expectation(description: "\(String(describing: type(of: request))) expectation")
