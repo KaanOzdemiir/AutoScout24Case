@@ -19,12 +19,22 @@ class CarFeedViewModel: BaseViewModel {
         }
     }
     
+    private var filteredCars: [CarResult] = []
+    
+    var isFiltering = false {
+        didSet {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                self.view?.updateTableView()
+            }
+        }
+    }
+    
     func viewDidLoad() {
         fetchCarFeed()
     }
     
     var carCellViewModels: [CarCellViewModel] {
-        cars.compactMap {
+        (isFiltering ? filteredCars : cars).compactMap {
             CarCellViewModel(car: $0)
         }
     }
@@ -38,7 +48,30 @@ class CarFeedViewModel: BaseViewModel {
     }
     
     func car(at indexPath: IndexPath) -> CarResult? {
-        cars[safe: indexPath.row]
+        isFiltering ? filteredCars[safe: indexPath.row] : cars[safe: indexPath.row]
+    }
+    
+    func filter(by text: String?) {
+        guard !text.orEmpty else {
+            isFiltering = false
+            return
+        }
+        isFiltering = true
+        // Debouncer could use
+        filteredCars = cars.filter {
+            [
+                $0.mileage?.stringValue,
+                $0.fuel,
+                $0.description,
+                $0.model,
+                $0.make,
+                $0.colour,
+                $0.seller?.city
+            ]
+            .compactMap { $0 }
+            .joined(separator: ", ")
+            .contains(text!)
+        }
     }
 }
 

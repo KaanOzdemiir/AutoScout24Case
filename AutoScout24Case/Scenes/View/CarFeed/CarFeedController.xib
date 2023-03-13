@@ -45,11 +45,6 @@
             </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="143.97321428571428"/>
         </view>
-        <searchDisplayController id="NOs-yN-NQq">
-            <connections>
-                <outlet property="searchBar" destination="KQP-3b-Ee9" id="hHK-8R-JFx"/>
-            </connections>
-        </searchDisplayController>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">

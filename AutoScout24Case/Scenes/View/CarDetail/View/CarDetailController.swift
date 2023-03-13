@@ -23,6 +23,7 @@ final class CarDetailController: BaseController<CarDetailViewModel>, CarDetailVi
     @IBOutlet private weak var fuelLabel: UILabel!
     @IBOutlet private weak var millageLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var pageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,10 @@ final class CarDetailController: BaseController<CarDetailViewModel>, CarDetailVi
         millageLabel.text = viewModel.millageText
         priceLabel.text = viewModel.priceText
     }
+    
+    private func updatePageLabel() {
+        pageLabel.text = viewModel.pageText
+    }
 }
 
 extension CarDetailController: UICollectionViewDataSource {
@@ -63,7 +68,14 @@ extension CarDetailController: UICollectionViewDataSource {
 }
 
 extension CarDetailController: UICollectionViewDelegate {
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSet = scrollView.contentOffset.x
+        let width = UIScreen.main.bounds.width - 32
+        let horizontalCenter = width / 2
+        
+        viewModel.currentPage = Int(offSet + horizontalCenter) / Int(width)
+        updatePageLabel()
+    }
 }
 
 extension CarDetailController: UICollectionViewDelegateFlowLayout {

@@ -30,6 +30,8 @@ final class CarFeedController: BaseController<CarFeedViewModel>, CarFeedViewInte
         tableView.dataSource = self
         tableView.register(cell: CarCell.self)
         tableView.separatorStyle = .none
+        
+        searchBar.delegate = self
     }
     
     func presentAlert(message: String) {
@@ -66,5 +68,11 @@ extension CarFeedController: UITableViewDelegate {
             let controller = CarDetailController(viewModel: viewModel)
             navigationController?.pushViewController(controller, animated: true)
         }
+    }
+}
+
+extension CarFeedController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filter(by: searchBar.text)
     }
 }

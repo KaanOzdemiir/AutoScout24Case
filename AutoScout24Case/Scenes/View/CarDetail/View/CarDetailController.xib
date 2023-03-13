@@ -17,6 +17,7 @@
                 <outlet property="locationLabel" destination="vLb-ee-d4d" id="p1U-5q-pRl"/>
                 <outlet property="makeAndModelLabel" destination="uLs-9R-ZLF" id="hJ0-3z-kbk"/>
                 <outlet property="millageLabel" destination="cbA-IM-7Fw" id="3RC-aL-Ytc"/>
+                <outlet property="pageLabel" destination="s1q-HV-Vqb" id="Mkh-9w-sDk"/>
                 <outlet property="priceLabel" destination="hRi-rD-kam" id="Zw7-ja-MV2"/>
                 <outlet property="titleLabel" destination="XBT-fT-Ty9" id="ENm-zr-wzN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -100,8 +101,28 @@
                                 </stackView>
                             </subviews>
                         </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-Bd-GJX">
+                            <rect key="frame" x="330.33333333333331" y="24" width="35" height="28.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-HV-Vqb">
+                                    <rect key="frame" x="4" y="4" width="27" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="s1q-HV-Vqb" secondAttribute="bottom" constant="4" id="bmd-j7-hgV"/>
+                                <constraint firstItem="s1q-HV-Vqb" firstAttribute="top" secondItem="3BN-Bd-GJX" secondAttribute="top" constant="4" id="hnv-1d-RWM"/>
+                                <constraint firstAttribute="trailing" secondItem="s1q-HV-Vqb" secondAttribute="trailing" constant="4" id="is4-3j-MiA"/>
+                                <constraint firstItem="s1q-HV-Vqb" firstAttribute="leading" secondItem="3BN-Bd-GJX" secondAttribute="leading" constant="4" id="q2s-OM-Xva"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="3BN-Bd-GJX" firstAttribute="trailing" secondItem="YjJ-7V-Cb8" secondAttribute="trailing" constant="-8" id="BPW-bI-bar"/>
+                        <constraint firstItem="3BN-Bd-GJX" firstAttribute="top" secondItem="YjJ-7V-Cb8" secondAttribute="top" constant="8" id="LRc-iO-q92"/>
                         <constraint firstItem="mQa-ac-vsV" firstAttribute="top" secondItem="JNr-V9-R43" secondAttribute="top" constant="16" id="Nl8-HI-Aj3"/>
                         <constraint firstAttribute="bottom" secondItem="mQa-ac-vsV" secondAttribute="bottom" constant="16" id="PjP-05-MDv"/>
                     </constraints>

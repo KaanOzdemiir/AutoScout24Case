@@ -14,6 +14,8 @@ final class CarDetailViewModel: BaseViewModel {
     
     var car: CarResult
     
+    var currentPage: Int = 0
+    
     init(car: CarResult) {
         self.car = car
     }
@@ -48,6 +50,10 @@ final class CarDetailViewModel: BaseViewModel {
             return "$ \(price.stringValue)"
         }
         return nil
+    }
+    
+    var pageText: String? {
+        "\(currentPage)/\(numberOfItems)"
     }
     
     var carImageCellViewModels: [CarImageCellViewModel] {
